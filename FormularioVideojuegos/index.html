@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+  <head>
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Formulario de Encuesta</h1>
+    <p id="description">Encuesta de videojuegos jugados actualmente</p>
+    <div class="formularioEncuesta">
+      <form id="survey-form">
+        <label id="name-label" for="name"> Nombre
+          <input id="name" type="text" required placeholder="Ingresa tu nombre..."/>
+        </label>
+        <label id="email-label" for="email"> Correo Electrónico
+          <input id="email" type="email" required placeholder="Ingresa tu correo electrónico..."/>
+        </label>
+              <label id="number-label" for="number"> Edad
+          <input id="number" type="number" required min="10" max="100" placeholder="Ingresa tu edad..."/>
+        </label>
+        <label id="select-label"> ¿Cuántas horas jugas al día?
+        <select id="dropdown">
+          <option>Selecciona uno:</option>
+          <option>1-2 horas al día</option>
+          <option>3-4 horas al día</option>
+          <option>Entre 5 a 8 horas al día</option>
+          <option>10+ horas al día</option>
+          <option>No tengo tiempo para jugar</option>
+        </select>
+        </label>
+        <label>Selecciona la plataforma en la cual juegas</label>
+
+<label id="plataformaJuego">
+  <input type="radio" name="plataformaJuego" class="inline" value="Consolas (Xbox, Playstation)." checked>Consolas (Xbox, Playstation).
+</label>
+
+<label id="plataformaJuego">
+  <input type="radio" name="plataformaJuego" class="inline" value="PC">PC
+</label>
+
+<label id="plataformaJuego">
+  <input type="radio" name="plataformaJuego" class="inline" value="Móvil">Móvil
+</label>
+
+<label id="plataformaJuego">
+  <input type="radio" name="plataformaJuego" class="inline" value="Consolas Portátiles (Steam Deck, Nintendo Switch, etc).">Consolas Portátiles (Steam Deck, Nintendo Switch, etc).
+</label>
+
+              <label id="select-label">¿Cuántas plataformas posees actualmente?
+        <select id="dropdown">
+          <option>Selecciona uno:</option>
+          <option>Tengo 1 plataforma de juego</option>
+          <option>Tengo 2 plataformas para jugar</option>
+          <option>Tengo al menos una de cada plataforma mencionada</option>
+          <option>Las tengo todas</option>
+          <option>No tengo ninguna</option>
+        </select>
+        </label>
+        <label id="generoJuego"> ¿Cuáles son tus géneros favoritos? (puedes elegir varios).
+          <label id="generoJuego"><input type="checkbox" name="plataformaJuego" class="inline" value="1">J-RPG</label>
+          <label id="generoJuego"><input type="checkbox" name="plataformaJuego" class="inline" value="2">Acción y Aventuras</label>
+          <label id="generoJuego"><input type="checkbox" name="plataformaJuego" class="inline" value="3">Shooters</label>
+          <label id="generoJuego"><input type="checkbox" name="plataformaJuego" class="inline" value="4">Cartas</label>
+          <label id="generoJuego"><input type="checkbox" name="plataformaJuego" class="inline" value="5">Deportes</label>
+          <label id="generoJuego"><input type="checkbox" name="plataformaJuego" class="inline" value="6">Mundo Abierto</label>
+          <label id="generoJuego"><input type="checkbox" name="plataformaJuego" class="inline" value="7">Carreras</label>
+        </label>
+        <label for="textarea">¿Algún comentario extra?
+          <textarea id="textarea" name="textareaComentario" rows="3" cols="35" placeholder="También me gustan los juegos difíciles..."></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit"/>
+      </form>
+    </div>
+  </body>
+</html>
